@@ -1,5 +1,10 @@
 #!/bin/bash
 set -e
 
+
+
+echo "Seting up the database"
 rake db:setup
-rails server
+
+echo "Starting Rails server..."
+rails server -b 0.0.0.0

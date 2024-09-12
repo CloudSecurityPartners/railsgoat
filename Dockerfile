@@ -1,12 +1,14 @@
-FROM rails:onbuild
-MAINTAINER mccabe615
+FROM ruby:2.1.5
+WORKDIR /usr/src/app
+COPY Gemfile* ./
+RUN bundle install
+COPY . .
 
-ADD script/start /start
+RUN chmod a+x script/start
 
-RUN chmod a+x /start
-
-user root
+USER root
 
 ENV RAILS_ENV development
 
-CMD /start
+EXPOSE 3000
+CMD script/start
