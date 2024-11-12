@@ -1,4 +1,4 @@
-FROM ruby:2.1.5
+FROM ruby:2.1.10
 WORKDIR /usr/src/app
 COPY Gemfile* ./
 RUN bundle install
