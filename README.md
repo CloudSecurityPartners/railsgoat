@@ -20,3 +20,10 @@ Running the app:
 docker build . -t "railsgoat-3.2"
 docker run -d -p 3000:3000 --name railsgoat railsgoat-3.2
 ```
+
+Platform Issues (Mac Silicon):
+
+```
+docker build . -t "railsgoat-3.2" --platform=linux/arm64/v8
+docker run -d -p 3000:3000 --name railsgoat railsgoat-3.2
+```
