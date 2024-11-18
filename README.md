@@ -11,3 +11,12 @@ $ rails server
 ```
 
 Once the server is running Codespaces will automatically forward the ports. Click on the "Ports" tab in the codespaces terminal. There's a globe icon near the forwarded address. This will enable you to access the environment.
+
+## Getting Started (Docker)
+
+Running the app:
+
+```
+docker build . -t "railsgoat-3.2"
+docker run -d -p 3000:3000 --name railsgoat railsgoat-3.2
+```
