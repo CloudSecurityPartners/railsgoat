@@ -15,7 +15,7 @@ Pick the appropriate operating system and follow the instructions.
 After installing the above software, clone this repo:
 
 ```bash
-$ git clone git@github.com:OWASP/railsgoat.git
+$ git clone git@github.com:cloudsecuritypartners/railsgoat.git
 ```
 
 **NOTE: NOT NECESSARY IF YOU WANT TO WORK WITH RAILS 6.** Otherwise, if you wish to use the Rails 3 or 4 versions, you'll need to switch branches:
